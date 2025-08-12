@@ -39,7 +39,7 @@ export function Controls() {
 
   return (
     <div className="sticky top-0 z-50 flex flex-wrap items-center gap-3 bg-gray-900/90 backdrop-blur rounded-lg border border-gray-800 p-3 pointer-events-auto">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2" data-tour="playback-controls">
         <button className="px-3 py-1.5 rounded bg-emerald-600 hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-400" onClick={play} disabled={isPlaying}>
           ▶️ Play
         </button>
@@ -53,7 +53,7 @@ export function Controls() {
           ⏹️ Reset
         </button>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2" data-tour="strategy-selector">
         <label className="text-sm text-gray-300">Strategy</label>
         <select
           className="bg-gray-800 border border-gray-700 rounded px-3 py-1 min-w-[140px]"

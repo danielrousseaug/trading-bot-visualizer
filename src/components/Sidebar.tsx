@@ -49,7 +49,7 @@ export function Sidebar() {
   return (
     <div className="space-y-4">
       {/* Strategy Info */}
-      <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
+      <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700" data-tour="performance-metrics">
         <div className="text-lg font-semibold mb-2">{strategyConfig?.displayName || 'Strategy'}</div>
         <div className="text-xs text-gray-400 mb-3">{strategyConfig?.description}</div>
         
@@ -96,7 +96,7 @@ export function Sidebar() {
       </div>
 
       {/* Recent Trades */}
-      <div>
+      <div data-tour="trade-history">
         <div className="text-sm font-semibold mb-2">Recent Trades</div>
         <div className="space-y-1 max-h-[25vh] overflow-auto pr-1">
           {trades.length === 0 && <div className="text-sm text-gray-500">No trades yet.</div>}

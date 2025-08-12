@@ -63,7 +63,7 @@ export function DatasetManager() {
   }
 
   return (
-    <div className="relative">
+    <div className="relative" data-tour="dataset-selector">
       <div className="flex items-center gap-2">
         <label className="text-sm text-gray-300">Dataset</label>
         <div className="relative">

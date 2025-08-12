@@ -160,7 +160,7 @@ export function ChartPanel() {
 
   return (
     <div className="space-y-4">
-      <div className="h-[60vh] md:h-[56vh]">
+      <div className="h-[60vh] md:h-[56vh]" data-tour="main-chart">
         <Plot
           data={data as any}
           layout={{
@@ -185,7 +185,7 @@ export function ChartPanel() {
       </div>
       
       {['RSI', 'MACD', 'STOCHASTIC'].includes(strategyName) && (
-        <div className="h-[22vh] md:h-[20vh]">
+        <div className="h-[22vh] md:h-[20vh]" data-tour="oscillator-chart">
           <Plot
             data={oscillatorData.data as any}
             layout={{
@@ -210,7 +210,7 @@ export function ChartPanel() {
         </div>
       )}
       
-      <div className="h-[20vh]">
+      <div className="h-[20vh]" data-tour="equity-chart">
         <Plot
           data={equityData as any}
           layout={{
