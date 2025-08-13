@@ -11,6 +11,7 @@ Interactive tool for testing and visualizing trading strategies on historical ma
 - Performance metrics and trade history
 - Guided walkthrough for new users
 
+
 ## Getting Started
 
 ```bash
